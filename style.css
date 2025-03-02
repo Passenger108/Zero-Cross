@@ -39,9 +39,12 @@ nav ul li {
 
 .line {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 0;
-    border: 1px solid red;
-    transition: width 1s ease-in-out;
+    height: 0;
+    border: 1px solid white;
+    transition: width 1s ease-in-out, height 1s ease-in-out;
 }
 
 .box {

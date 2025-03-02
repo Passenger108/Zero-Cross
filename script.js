@@ -47,26 +47,45 @@ const resetButton = () => {
         element.textContent ="";
     })
     gif.style.width = 0 ;
+
+    line.style.borderColor = "white";
+    line.style.width="0";
+    line.style.height="0";
+    line.style.transform ="";
 }
 
 const drawLine = (i) => {
-    
+    line.style.borderColor = "red";
     switch(i){
         case 0 :line.style.transform = "translateY(5vw)";
+                line.style.width = "100%";
         break;
         case 1 :line.style.transform = "translateY(15vw)";
+                line.style.width = "100%";
         break;
         case 2 :line.style.transform = "translateY(25vw)";
+                line.style.width = "100%";
         break;
-        case 3 :line.style.transform = "translateY(15vw) rotate(90deg)";
+        case 3 :line.style.transform = "translateX(5vw)";
+                line.style.height = "100%";
         break;
-        case 4 :line.style.transform = "translateY(15vw) rotate(90deg)";
+        case 4 :line.style.transform = "translateX(15vw) ";
+                line.style.height = "100%";
         break;
-        case 5 :line.style.transform = "translateY(15vw) rotate(90deg) translateX(10vw";
+        case 5 :line.style.transform = "translateX(25vw) ";
+                line.style.height="100%";
         break;
+        case 6 :line.style.transformOrigin = "0% 50%";
+        line.style.transform ="rotate(45deg)";
+        line.style.width = "140%";
+        break;
+                
+        case 7: line.style.transformOrigin = "0% 50%";
+                line.style.transform ="translateX(30vw) rotate(135deg)";
+                line.style.width = "140%";
+                break;
     }
     
-    line.style.width = "100%";
 }
 
 //events
