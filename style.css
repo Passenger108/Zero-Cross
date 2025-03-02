@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sigmar&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sigmar&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+nav ul {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    height: 92px;
+
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    font-size:45px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family: "Varela Round", sans-serif;
+    padding-left: 34px;
+}
+
+.container {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+}
+
+.gameContainer {
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 0;
+    border: 1px solid red;
+    transition: width 1s ease-in-out;
+}
+
+.box {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-image: linear-gradient(10deg, #cbe3f4 0%, #d7d9f4 100%);
+}
+
+.boxText {
+    font-family: "Sigmar", sans-serif;
+    font-size: 8vw;
+}
+
+.gameInfo {
+    padding: 34px;
+}
+
+
+.gameInfo h1 {
+    font-family: "Varela Round", sans-serif;
+    margin-bottom: 50px;
+}
+
+.gameInfo img {
+    width: 0;
+    display: block;
+    transition: width 0.3s ease-in-out;
+}
+
+.bt-0 {
+    border-top: none;
+}
+.bb-0 {
+    border-bottom: none;
+}
+.bl-0 {
+    border-left: none;
+}
+.br-0 {
+    border-right: none;
+}
+
+#gameDetail {
+    display: inline-block;
+    width: 20vw;
+    text-align: center;
+    font-size: 34px;
+    height: 100px;
+    font-family: "Sigmar", sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by kosedagyazilim */ 
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    background-image:  linear-gradient(10deg, #cbe3f4 0%, #d7d9f4 100%);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #0072ff;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #0072ff;
+  }
+  
+  .button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(10deg, #cbe3f4 0%, #d7d9f4 100%);
+  }
+  
+  .button:before,
+  .button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .button:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+  }
+  
+  .button:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+  }
+  
