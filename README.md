@@ -2,8 +2,9 @@
 
 A fun and interactive **Tic Tac Toe (Zero Cross)** game built using **HTML, CSS, and JavaScript** with cool animations and effects.
 
-## 🌐 Live Demo
-🔗 [Play Zero Cross Now!](#) *(https://passenger108.github.io/Zero-Cross/)*
+## 🚀 Live Demo  
+
+🔗 **[Click here to view the live project!](https://passenger108.github.io/Zero-Cross/)**  
 
 ## 🛠 Features
 ✅ **Classic Tic Tac Toe Gameplay** - Play against a friend on the same device.  
